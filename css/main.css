@@ -1,0 +1,830 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+}
+
+:root {
+    --main_font--: "Poppins", sans-serif;
+    --sec3_font--: "Raleway", sans-serif;
+
+}
+
+body {
+    font-family: var(--main_font--);
+    background-color: #000;
+    color: #fff;
+}
+
+#main {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+#main .main_square {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#main .main_square .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main .main_square .square figure img{
+    max-height: 900px;
+}
+
+#main .main_square .main_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#main .main_square .main_text h2 {
+    font-size: 5rem;
+    line-height: 150%;
+}
+
+/* main */
+
+#section_01 {
+    margin-top: 200px;
+   max-width: 1200px;
+    margin: auto;
+    margin-bottom: 100px;
+    font-size: 1.2rem;
+    position: relative;
+    display: flex;
+}
+
+
+#section_01 .sec_01_contents{
+    width: 50%;
+}
+
+#section_01 .sec_01_contents .sec_01_contents_about{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#section_01 .sec_01_contents .sec_01_contents_about .about_title{
+    font-size: 2rem;
+}
+
+#section_01 .sec_01_contents .sec_01_contents_about .about_item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#section_01 .sec_01_contents .sec_01_contents_about .about_text{
+    width: 60%;
+    margin-top: 32px;
+}
+
+#section_01 .sec_01_contents .sec_01_contents_about .about_text p{
+    line-height: 160%;
+}
+
+/* line */
+
+#section_01 .sec_01_contents_skill {
+    width: 50%;
+    display: flex;
+    margin-bottom: 70px;
+}
+
+#section_01 .sec_01_contents_skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skill_title{
+    margin-bottom: 24px;
+}
+
+.skill_title h3{
+    font-size: 2rem;
+}
+
+#section_01 .sec_01_contents_skill .skill_item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    margin-bottom: 32px;
+}
+
+#section_01 .skill_text{
+    font-size: 1.2rem;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#section_01 .skill_text h3{
+    font-size: 1.2rem;
+}
+
+#section_01 .progress_bar {
+    width: 100px;
+    height: 50px;
+    margin: 20px auto;
+}
+
+#section_01 .svg {
+    display: block;
+    margin: calc(50% - 30px) auto;
+}
+
+.skill_bar{
+    height: 150px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.chart {
+    float: left;
+    /* width: 33.33%; */
+    text-align: center;
+}
+
+.chart span.title {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 110px;
+}
+
+    /* skill */
+
+#section_01 .sec_01_contents_certi{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#section_01 .sec_01_contents_certi .certi_title{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 24px;
+    font-size: 2rem;
+}
+
+#section_01 .sec_01_contents_certi .certi_item{
+    width: 100%;
+}
+
+#section_01 .sec_01_contents_certi .certi_item h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+/* section01 */
+
+.swiper_title{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.swiper_title h2{
+    font-size: 2rem;
+}
+
+.swiper {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    margin-top: 32px;
+    margin-bottom: 200px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-slide-item-text{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.swiper-slide-item-text .number{
+    font-size: 2rem;
+    margin-bottom: 24px;
+}
+
+.swiper-slide-item-text-inner{
+    width: 500px;
+}
+
+.contents_title{
+    font-size: 1.5rem;
+    margin-bottom: 32px;
+}
+
+.number{
+    font-size: 1.5rem;
+}
+
+.project{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project h3, .project p{
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+.project p{
+    text-align: right;
+    line-height: 150%;
+}
+
+.contribution{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contribution h3, .contribution p{
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+.tool{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tool h3, .tool p{
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+
+}
+
+.tool p{
+    line-height: 150%;
+    text-align: right;
+}
+
+.introduce{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.introduce h3 {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+.introduce p{
+    font-size: 1.2rem;
+    line-height: 150%;
+}
+
+
+
+
+
+/* section_02 */
+
+#section_03 {
+    /* width: calc(100% - 600px); */
+    width: 100%;
+    margin: auto;
+    font-family: var(--sec3_font--);
+    font-weight: 900;
+    color: #fff;
+    font-size: 4vw;
+}
+
+#section_03 .sec_03_work {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+
+#section_03 .sec_03_work .work_img {
+    width: 52vw;
+    height: 100px;
+    background-image: url(../img/work_img.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section_03 .sec_03_lookout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+
+#section_03 .sec_03_lookout .lookout_img {
+    width: 26vw;
+    height: 100px;
+    background-image: url(../img/lookout_img.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section_03 .sec_03_passion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+
+#section_03 .sec_03_passion .passion_img_1 {
+    width: 30vw;
+    height: 100px;
+    background-image: url(../img/passion_img.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section_03 .sec_03_passion .passion_img_2 video {
+    width: 15vw;
+    height: 100px;
+    object-fit: cover;
+}
+
+#section_03 .sec_03_publisher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+
+#section_03 .sec_03_publisher .publisher_img_1 {
+    width: 50vw;
+    height: 100px;
+    background-image: url(../img/publisher_img.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#section_03 .sec_03_feel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 62px;
+}
+
+#section_03 .sec_03_feel .feel_img_1 {
+    width: 28vw;
+    height: 100px;
+    background-image: url(../img/reach_img.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#section_03 .contact_link {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+#section_03 .contact_link .contact_title{
+    margin-bottom: 24px;
+}
+
+#section_03 .contact_link .openkakao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+#section_03 .contact_link .openkakao h2 {
+    margin-bottom: 48px;
+}
+
+#section_03 .contact_link .openkakao .openkakao_img figure img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+#section_03 .contact_link .gmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section_03 .contact_link .gmail h2{
+    margin-bottom: 24px;
+}
+
+#section_03 .gmail{
+    width: 100%;
+}
+
+@media screen and (max-width : 1220px) {
+    #section_01{
+        max-width: 960px;
+        display: flex;
+        margin-top: 200px;
+    }
+
+    .swiper_title{
+        max-width: 960px;
+    }
+
+    .swiper{
+        max-width: 960px;
+    }
+
+    .swiper-slide-item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .swiper-slide-item-text{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    #main .main_square .main_text h2{
+        font-size: 3.5rem;
+    }
+
+    #section_03 .sec_03_work .work_img , #section_03 .sec_03_lookout .lookout_img ,
+    #section_03 .sec_03_passion .passion_img_1, #section_03 .sec_03_passion .passion_img_2 video ,
+    #section_03 .sec_03_publisher .publisher_img_1 ,#section_03 .sec_03_feel .feel_img_1{
+        height: 80px;
+    }
+
+    #section_03 .contact_link .openkakao .openkakao_img figure img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+
+    #section_01{
+        max-width: 766px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section_01 .sec_01_contents{
+        width: 100%;
+    }
+
+    #section_01 .sec_01_contents .sec_01_contents_about{
+        width: 100%;
+    }
+
+    #section_01 .sec_01_contents .sec_01_contents_about .about_text{
+        width: 100%;
+    }
+
+    #section_01 .sec_01_contents_skill{
+        width: 100%;
+    }
+
+    #section_01 .sec_01_contents_skill .skill_item {
+        margin-bottom: 48px;
+    }
+
+    .skill_title h3{
+        margin-top: 48px;
+    }
+
+    .swiper_title{
+        max-width: 766px;
+    }
+
+    .swiper {
+        max-width: 766px;
+        margin-bottom: 100px;
+    }
+
+   
+    #section_03 .sec_03_work .work_img, #section_03 .sec_03_lookout .lookout_img, #section_03 .sec_03_passion .passion_img_1, #section_03 .sec_03_passion .passion_img_2 video, #section_03 .sec_03_publisher .publisher_img_1, #section_03 .sec_03_feel .feel_img_1, #section_03 .sec_03_contact .contact_img_1, #section_03 .sec_03_contact .contact_img_2 video{
+        height: 60px;
+    }
+
+    #section_03 .contact_link .openkakao .openkakao_img figure img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    #section_01{
+        max-width: 700px;
+    }
+
+    .swiper{
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #main {
+        margin-bottom: 0px;
+    }
+
+    #main .main_square .main_text h2 {
+        font-size: 2.5rem;
+    }
+    #section_01{
+        margin-top: 200px;
+        max-width: 560px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .swiper_title {
+        max-width: 560px;
+    }
+   
+    .swiper{
+        max-width: 560px;
+    }
+
+    .project_img{
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width : 650px) {
+    #section_01{
+        max-width: 500px;
+        margin-top: 100px;
+    }
+
+    #section_01 .sec_01_contents_skill {
+        margin-bottom: 0;
+    }
+
+    .swiper_title {
+        max-width: 500px;
+    }
+    
+    .swiper{
+        max-width: 500px;
+        margin-top: 0;
+    }
+
+    #section_03 .contact_link{
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 100px;
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width:575px) {
+    #main .main_square .main_text h2{
+        font-size: 2rem;
+    }
+
+    #section_01{
+        max-width: 400px;
+    }
+    
+    #section_01 .sec_01_contents .sec_01_contents_about .about_title {
+        font-size: 1.5rem;
+    }
+
+    #section_01 .sec_01_contents .sec_01_contents_about .about_item {
+        font-size: 1rem;
+    }
+
+    .skill_title h3 {
+        font-size: 1.5rem;
+    }
+
+    #section_01 .sec_01_contents_skill .skill_item {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    #section_01 .sec_01_contents_certi .certi_title {
+        font-size: 1.5rem;
+    }
+
+    .swiper_title {
+        max-width: 400px;
+    }
+
+    .swiper{
+        max-width: 400px;
+    }
+
+    .swiper_title h2{
+        font-size: 1.5rem;
+    }
+
+    .swiper-slide-item-text .number{
+        font-size: 1.5rem;
+    }
+
+    .contents_title {
+        font-size: 1.2rem;
+        margin-bottom: 24px;
+    }
+
+    .project h3,.contribution h3, .tool h3, .introduce h3{
+        margin-bottom: 24px;
+    }
+
+    .project p, .contribution p , .tool p, .introduce p{
+        font-size: 1rem;
+    }
+
+    #section_03 .contact_link {
+        max-width: 400px;
+        font-size: 1.2rem;
+    }
+    
+}
+
+
+@media screen and (max-width:400px) {
+    #main .main_square .main_text h2{
+        font-size: 1.5rem;
+    }
+
+    #section_01{
+        width: calc(100% - 32px);
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    #section_01 .sec_01_contents .sec_01_contents_about .about_title {
+        font-size: 1.2rem;
+    }
+
+    #section_01 .sec_01_contents .sec_01_contents_about .about_text{
+        margin-top: 24px;
+    }
+
+    #section_01 .sec_01_contents .sec_01_contents_about .about_text p {
+        font-size: 1rem;
+    }
+
+    .skill_title h3 {
+        font-size: 1.2rem;
+    }
+
+    #section_01 .sec_01_contents_skill .skill_item{
+        margin-bottom: 24px;
+    }
+
+    #section_01 .skill_text h3 {
+        font-size: 1rem;
+    }
+
+    #section_01 .sec_01_contents_certi .certi_title {
+        font-size: 1.2rem;
+    }
+
+    #section_01 .sec_01_contents_certi .certi_item h3{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .swiper_title{
+        width: calc(100% - 32px);
+    }
+
+    .swiper{
+        width: calc(100% - 32px);
+        margin-bottom: 80px;
+    }
+
+    #section_03 .contact_link {
+        width: calc(100% - 32px);
+        font-size: 1rem;
+    }
+
+    #section_03 .contact_link .contact_title {
+        margin-bottom: 16px;
+    }
+
+    #section_03 .contact_link .openkakao{
+        margin-bottom: 32px;
+    }
+
+    #section_03 .contact_link .openkakao h2 {
+        margin-bottom: 32px;
+    }
+
+    #section_03 .contact_link .openkakao .openkakao_img figure img{
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+    }
+
+    #section_03 .contact_link .gmail h2{
+        margin-bottom: 16px;
+    }
+
+    #section_03 .sec_03_work .work_img, #section_03 .sec_03_lookout .lookout_img, #section_03 .sec_03_passion .passion_img_1, #section_03 .sec_03_passion .passion_img_2 video, #section_03 .sec_03_publisher .publisher_img_1, #section_03 .sec_03_feel .feel_img_1, #section_03 .sec_03_contact .contact_img_1, #section_03 .sec_03_contact .contact_img_2 video {
+        height: 40px;
+    }
+
+    #section_03 .sec_03_work,#section_03 .sec_03_lookout,
+    #section_03 .sec_03_passion ,#section_03 .sec_03_publisher,
+    #section_03 .sec_03_lookout,#section_03 .sec_03_feel
+     {
+        margin-bottom: 24px;
+    }
+
+}
+
+
+@media screen and (max-height : 400px) {
+    
+}
+
+
